@@ -138,7 +138,10 @@
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 2000
+      backDelay: 2000,
+      startDelay: 1000, // Add slight delay before starting
+      showCursor: true,
+      cursorChar: '|'
     });
   }
 

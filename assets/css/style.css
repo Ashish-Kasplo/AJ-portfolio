@@ -74,8 +74,7 @@ h6 {
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9997;
-  transition: all 0.5s;
+  z-index: 996; /* Changed from 9997 to lower value */
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
@@ -241,6 +240,10 @@ h6 {
   height: 100vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
+  position: relative;
+  padding: 0;
+  margin-left: 300px;
+  z-index: 1; /* Lower z-index */
 }
 
 #hero:before {
@@ -251,13 +254,21 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 1; /* Lower z-index */
 }
 
 #hero .hero-container {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Higher z-index than overlay */
   min-width: 300px;
+  padding: 0 15px;
+  text-align: center; /* Center the text */
+}
+
+@media (max-width: 1199px) {
+  #hero {
+    margin-left: 0; /* Reset margin on mobile */
+  }
 }
 
 #hero h1 {
