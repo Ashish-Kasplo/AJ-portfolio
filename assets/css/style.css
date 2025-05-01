@@ -66,7 +66,7 @@ h6 {
   opacity: 1;
 }
 
-
+/* Fix header and content positioning */
 #header {
   position: fixed;
   top: 0;
@@ -75,7 +75,6 @@ h6 {
   width: 300px;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
-  transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
@@ -104,19 +103,38 @@ h6 {
   text-decoration: none;
 }
 
+#header .profile .social-links-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 8px;
+}
+
+#header .profile .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 #header .profile .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #212431;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
+  background: #212431;
+  color: #fff;
+  border-radius: 50%;
   transition: 0.3s;
+  font-size: 16px;
+}
+
+#header .profile .social-links a i {
+  font-size: 18px;
+  margin: 0;  /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+  line-height: 1;
 }
 
 #header .profile .social-links a:hover {
@@ -127,6 +145,10 @@ h6 {
 
 #main {
   margin-left: 300px;
+  min-height: 100vh;
+  padding: 0 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .container,
@@ -148,6 +170,15 @@ h6 {
   .container-fluid {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .mobile-nav-active #header {
+    left: 0;
+  }
+
+  .mobile-nav-active #main {
+    margin-left: 0;
+    padding: 0 15px;
   }
 }
 
@@ -241,6 +272,10 @@ h6 {
   height: 100vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
+  position: relative;
+  padding: 0;
+  margin-left: 300px;
+  z-index: 1; /* Lower z-index */
 }
 
 #hero:before {
@@ -251,13 +286,21 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 1; /* Lower z-index */
 }
 
 #hero .hero-container {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Higher z-index than overlay */
   min-width: 300px;
+  padding: 0 15px;
+  text-align: center; /* Center the text */
+}
+
+@media (max-width: 1199px) {
+  #hero {
+    margin-left: 0; /* Reset margin on mobile */
+  }
 }
 
 #hero h1 {
@@ -305,6 +348,8 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
+  position: relative;
+  z-index: 2;
   padding: 60px 0;
   overflow: hidden;
 }
@@ -376,6 +421,17 @@ section {
   margin-bottom: 0;
 }
 
+/* About Section Improvements */
+.about .content {
+  padding: 30px;
+}
+
+.about .profile-img {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -425,6 +481,66 @@ section {
 
 .facts .count-box a:hover {
   color: #1f5297;
+}
+
+/* Facts Section Improvements */
+.facts .count-box {
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.facts .count-box:hover {
+  transform: translateY(-5px);
+}
+
+.facts .count-box i {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.facts .count-box span {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.facts .count-box p {
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.facts .count-box {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.facts .count-box i {
+  float: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.facts .count-box span {
+  margin-left: 0;
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.facts .count-box p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -695,55 +811,58 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  margin-bottom: 20px;
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-5px);
+}
+
+.services .icon-box .icon {
+  margin: 0 auto 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.services .icon-box .icon i {
+  font-size: 24px;
+}
+
+.services .icon-box .title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.services .icon-box .description {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Services Section Improvements */
+.services .icon-box {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-5px);
 }
 
 .services .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #149ddd;
-}
-
-.services .icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
-}
-
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #149ddd;
-}
-
-.services .title {
-  margin-left: 80px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #343a40;
-}
-
-.services .title a:hover {
-  color: #149ddd;
-}
-
-.services .description {
-  margin-left: 80px;
-  line-height: 24px;
-  font-size: 14px;
+  margin: 0 auto 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1101,4 +1220,53 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .about .profile-img {
+    max-width: 200px;
+    margin-bottom: 30px;
+  }
+  
+  .facts .count-box {
+    margin-bottom: 20px;
+  }
+  
+  .services .icon-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* Fix grid alignment */
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 15px);
+  padding-left: var(--bs-gutter-x, 15px);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Equal height columns */
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* AOS elements fix */
+[data-aos] {
+  position: relative;
+  z-index: 2;
 }

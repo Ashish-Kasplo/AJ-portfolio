@@ -3,18 +3,44 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish | Full Stack Developer with 2 Years Experience</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Full Stack Developer with 2 years of experience specializing in web development, JavaScript, PHP, Node.js. Expert in building scalable web applications and APIs.">
+  <meta name="keywords" content="full stack developer, web development, javascript developer, php developer, node.js developer, bangalore, india">
+  <meta name="author" content="Ashish">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Ashish - Full Stack Developer Portfolio">
+  <meta property="og:description" content="Full Stack Developer with 2 years experience building modern web applications">
+  <meta property="og:image" content="assets/img/profile-img.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
 
-  <title>Portfolio | Ashish</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- Schema.org markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Ashish",
+      "jobTitle": "Full Stack Developer",
+      "description": "Full Stack Developer with 2 years of experience",
+      "email": "ashishbox13@gmail.com",
+      "telephone": "+91 8073392045",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangalore",
+        "addressCountry": "India"
+      }
+    }
+  </script>
 
   
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon" type="image/png">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
 
  
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Add direct CDN links for icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
@@ -45,12 +71,37 @@
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">ASHISH S JADHAV</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/itz_me_jadhav?igsh=MW0zOWNranN0eDJicg%3D%3D&utm_source=qr" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/ashish-s-jadhav-560909204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <div class="social-links-container">
+          <div class="social-links mt-8">
+            <a href="https://www.linkedin.com/in/ashish-s-jadhav-560909204" 
+               class="linkedin social-icon" 
+               data-bs-toggle="tooltip" 
+               data-bs-placement="top" 
+               title="Connect on LinkedIn">
+               <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://github.com/YourGitHubUsername" 
+               class="github social-icon" 
+               data-bs-toggle="tooltip" 
+               data-bs-placement="top" 
+               title="View Projects on GitHub">
+               <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.instagram.com/itz_me_jadhav" 
+               class="instagram social-icon" 
+               data-bs-toggle="tooltip" 
+               data-bs-placement="top" 
+               title="Follow on Instagram">
+               <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="mailto:ashishbox13@gmail.com" 
+               class="email social-icon" 
+               data-bs-toggle="tooltip" 
+               data-bs-placement="top" 
+               title="Send Email">
+               <i class="bx bx-envelope"></i>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -70,8 +121,8 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
   <div class="hero-container" data-aos="fade-in">
-    <h1 style="color: #3498db;">Ashish</h1>
-    <p>I'm <span class="typed" data-typed-items="Full Stack Developer, Responsive Designer, APIK Handler, Problem solver"></span></p>
+    <h1>Ashish - Full Stack Developer</h1>
+    <p>Specializing in <span class="typed" data-typed-items="Modern Web Applications,API Development,Database Architecture,Cloud Solutions"></span></p>
   </div>
 </section>
 <!-- End Hero -->
@@ -80,47 +131,47 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Hey,I am Ashish s Jadhav a graduate from Jain University in specialisation of Mobile Applications and Cyber Security in computer applications. I am currently working as a Junior Developer in Kasplo Company with vast working on live sitaution based project with high techs with dynamic development of softwares and API testings .</p>
+    <section id="about" style="padding: 60px 0; position: relative;">
+      <div style="width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;">
+        <div style="margin-bottom: 30px; text-align: center;">
+          <h2 style="font-size: 32px; font-weight: bold; color: #173b6c; margin-bottom: 20px;">About Me</h2>
+          <p style="margin-bottom: 15px;">Full Stack Developer with 2 years of hands-on experience building scalable web applications and RESTful APIs. Expertise in JavaScript, PHP, Node.js and modern frameworks.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin: 0 -15px;">
+          <div style="flex: 0 0 40%; padding: 0 15px;">
+            <img src="assets/img/profile-img.jpg" alt="Profile Image" style="width: 100%; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>FULL STACK DEVELOPER </h3>
-            <p class="fst-italic">
-             Dedicated Developer with hands on experience on projects with core knowledge on technolgies with security enhancements skills.
+          
+          <div style="flex: 0 0 60%; padding: 0 15px;">
+            <h3 style="font-size: 26px; color: #173b6c; margin-bottom: 15px;">FULL STACK DEVELOPER</h3>
+            <p style="font-style: italic; margin-bottom: 20px;">
+              Dedicated Developer with hands on experience on projects with core knowledge on technologies with security enhancements skills.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 MAY 2002</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Company:</strong> <a href="http://www.kasplo.com" target="_blank">www.kasplo.com</a></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8073392045</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bangalore</span></li>
+            <div style="display: flex; flex-wrap: wrap; margin: 0 -15px;">
+              <div style="flex: 0 0 50%; padding: 0 15px;">
+                <ul style="list-style: none; padding: 0;">
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>Birthday:</strong> <span>13 MAY 2002</span></li>
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>Company:</strong> <a href="http://www.kasplo.com" target="_blank" style="color: #149ddd; text-decoration: none;">www.kasplo.com</a></li>
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>Phone:</strong> <span>+91 8073392045</span></li>
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>City:</strong> <span>Bangalore</span></li>
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>Phone:</strong> <span>+91 8073392045</span></li>
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>City:</strong> <span>Bangalore</span></li>
                 </ul>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BCA</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ashishbox13@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+              <div style="flex: 0 0 50%; padding: 0 15px;">
+                <ul style="list-style: none; padding: 0;">
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>Degree:</strong> <span>BCA</span></li>
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>Email:</strong> <span>ashishbox13@gmail.com</span></li>
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: #149ddd; margin-right: 5px;"></i> <strong>Email:</strong> <span>ashishbox13@gmail.com</span></li>
+                 
                 </ul>
               </div>
             </div>
-            <p>
-              As an enthusiastic and experienced Full Stack Developer, I bring a robust foundation in both server and client scripting to create and test websites, ensuring a seamless user experience. My skills extend to crafting secure and well-designed UI/UX, backed by a strong networking knowledge. With a commitment to excellence, effective teamwork, and clear communication, I am eager to contribute to building impactful projects for clients.
-            </p>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
@@ -129,44 +180,26 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Facts</h2>
-          <p>During My accademic duration i have been trained with core of computer application including overall skills and technologies in software development with hands on projects every month and certification programs .</p>
+          <h2>Professional Highlights</h2>
         </div>
 
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>happy learning months</strong> in computer field</p>
+        <div class="row g-4 row-eq-height">
+          <!-- First Row -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up">
+            <div class="count-box shadow-sm p-3">
+              <i class="bi bi-code-slash"></i>
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Months of Professional Experience</strong></p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box shadow-sm p-3">
+              <i class="bi bi-layers"></i>
               <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> mini and major projects</p>
+              <p><strong>Projects Completed</strong></p>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Months Of work</strong> as intern and junior developer</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>communication</strong> lanaguages known</p>
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -178,115 +211,100 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>Main skills acquired during these months with hands on experience and working in this skills .</p>
+          <p>Comprehensive full-stack development skills with expertise in modern web technologies, backend frameworks, databases, and DevOps tools.</p>
 
         <div class="row skills-content">
 
           <div class="col-lg-6" data-aos="fade-up">
-
+            <!-- Frontend Skills -->
             <div class="progress">
-              <span class="skill">HTML  <i class="val">95%</i></span>
+              <span class="skill">Frontend Development <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">CSS <i class="val">80%</i></span>
+              <span class="skill">React & Redux <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Responsive Designing<i class="val">90%</i></span>
+              <span class="skill">TypeScript <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Client-Side<i class="val">90%</i></span>
+              <span class="skill">MUI & Tailwind <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">REST APIS <i class="val">85%</i></span>
+              <span class="skill">Responsive Design <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">PHP(Laravel) <i class="val">80%</i></span>
+              <span class="skill">Library Building <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill">Node.js <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- Backend & Other Skills -->
+            <div class="progress">
+              <span class="skill">Java & Node.js <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
 
             <div class="progress">
-              <span class="skill">DEVOPs <i class="val">80%</i></span>
+              <span class="skill">Golang & PHP <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">programming lanaguages<i class="val">90%</i></span>
+              <span class="skill">SQL & NoSQL Databases <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Golang<i class="val">60%</i></span>
+              <span class="skill">Microservices Architecture <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <span class="skill">DevOps Tools (Git, Jenkins, Jira) <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>.js <i class="val">85%</i></span>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Structed Databases<i class="val">80%</i></span>
+              <span class="skill">Testing Tools (Postman, JMeter) <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">NoSQL Database<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Testing Tools<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Git <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
-
         </div>
 
       </div>
@@ -316,7 +334,6 @@
                 <li>ashishbox13@gmail.com</li>
               </ul>
             </div>
-
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Schooling &amp; Graduation</h4>
@@ -495,36 +512,35 @@
             </p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">UI/UX</a></h4>
-            <p class="description">Well designed interfaces with animations.</p>
+        <div class="row row-eq-height">
+          <div class="col-lg-6 col-md-6" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">UI/UX</a></h4>
+              <p class="description">Well designed interfaces with animations.</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href=""></a>Database management</a></h4>
-            <p class="description">Provide more effective and secure datawarehouse</p>
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Database management</a></h4>
+              <p class="description">Provide more effective and secure datawarehouse</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Testing</a></h4>
-            <p class="description">Perform load tests and performance</p>
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <h4 class="title"><a href="">Testing</a></h4>
+              <p class="description">Perform load tests and performance</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Security Enchancement</a></h4>
-            <p class="description">Maintaining CIA triads.</p>
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">Security Enhancement</a></h4>
+              <p class="description">Maintaining CIA triads.</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Deployment and Hosting</a></h4>
-            <p class="description">Proper flow of data and network analyis</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Project Management</a></h4>
-            <p class="description">Managing the project and client interactions.</p>
         </div>
 
       </div>
@@ -662,6 +678,19 @@
                 </div>
               </div>
               <div class="form-group">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
                 <label for="name">Subject</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
@@ -700,22 +729,32 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
-
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
+  <!-- Replace the current typed.js script with this CDN version -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  
+  <!-- Keep other vendor scripts -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Main JS File (should be loaded last) -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Initialize Bootstrap tooltips -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.forEach(function(tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    });
+  </script>
 </body>
-
 </html>
