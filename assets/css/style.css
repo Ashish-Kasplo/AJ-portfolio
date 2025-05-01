@@ -487,6 +487,36 @@ section {
 .facts .count-box {
   text-align: center;
   background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.facts .count-box:hover {
+  transform: translateY(-5px);
+}
+
+.facts .count-box i {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.facts .count-box span {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.facts .count-box p {
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.facts .count-box {
+  text-align: center;
+  background: #fff;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -781,55 +811,38 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  margin-bottom: 20px;
-}
-
-.services .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #149ddd;
-}
-
-.services .icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
-}
-
-.services .icon-box:hover .icon {
+  text-align: center;
   background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #149ddd;
-}
-
-.services .title {
-  margin-left: 80px;
-  font-weight: 700;
+  padding: 15px;
   margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-5px);
+}
+
+.services .icon-box .icon {
+  margin: 0 auto 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.services .icon-box .icon i {
+  font-size: 24px;
+}
+
+.services .icon-box .title {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.services .title a {
-  color: #343a40;
-}
-
-.services .title a:hover {
-  color: #149ddd;
-}
-
-.services .description {
-  margin-left: 80px;
-  line-height: 24px;
+.services .icon-box .description {
   font-size: 14px;
+  margin: 0;
 }
 
 /* Services Section Improvements */
