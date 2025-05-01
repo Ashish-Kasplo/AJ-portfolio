@@ -66,7 +66,7 @@ h6 {
   opacity: 1;
 }
 
-
+/* Fix header and content positioning */
 #header {
   position: fixed;
   top: 0;
@@ -74,7 +74,7 @@ h6 {
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 996; /* Changed from 9997 to lower value */
+  z-index: 9997;
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
@@ -145,6 +145,10 @@ h6 {
 
 #main {
   margin-left: 300px;
+  min-height: 100vh;
+  padding: 0 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .container,
@@ -166,6 +170,15 @@ h6 {
   .container-fluid {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .mobile-nav-active #header {
+    left: 0;
+  }
+
+  .mobile-nav-active #main {
+    margin-left: 0;
+    padding: 0 15px;
   }
 }
 
@@ -335,6 +348,8 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
+  position: relative;
+  z-index: 2;
   padding: 60px 0;
   overflow: hidden;
 }
@@ -406,6 +421,17 @@ section {
   margin-bottom: 0;
 }
 
+/* About Section Improvements */
+.about .content {
+  padding: 30px;
+}
+
+.about .profile-img {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -455,6 +481,36 @@ section {
 
 .facts .count-box a:hover {
   color: #1f5297;
+}
+
+/* Facts Section Improvements */
+.facts .count-box {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.facts .count-box i {
+  float: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.facts .count-box span {
+  margin-left: 0;
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.facts .count-box p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -774,6 +830,26 @@ section {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
+}
+
+/* Services Section Improvements */
+.services .icon-box {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-5px);
+}
+
+.services .icon {
+  margin: 0 auto 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1131,4 +1207,53 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .about .profile-img {
+    max-width: 200px;
+    margin-bottom: 30px;
+  }
+  
+  .facts .count-box {
+    margin-bottom: 20px;
+  }
+  
+  .services .icon-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* Fix grid alignment */
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 15px);
+  padding-left: var(--bs-gutter-x, 15px);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Equal height columns */
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* AOS elements fix */
+[data-aos] {
+  position: relative;
+  z-index: 2;
 }
